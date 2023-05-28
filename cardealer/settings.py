@@ -95,11 +95,11 @@ WSGI_APPLICATION = 'cardealer.wsgi.application'
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cardealer_db',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '2222',
-        'HOST': '127.0.0.1',
-		'PORT': '5432',
+        'PASSWORD': 's0EQN2YufNu2Bc74BlT0',
+        'HOST': 'containers-us-west-48.railway.app',
+		'PORT': '5497',
      }
  }
 
