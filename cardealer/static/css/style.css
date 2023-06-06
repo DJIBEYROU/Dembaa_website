@@ -777,7 +777,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .main-header .company-logo img {
-  height: 50px;
+  height: 150px;
 }
 
 .main-header .company-logo-2 img {
@@ -9164,11 +9164,11 @@ input[type="tel"] {
   }
 
   .main-header .company-logo img {
-    height: 40px;
+    height: 150px;
   }
 
   .main-header .company-logo-2 img {
-    height: 40px;
+    height: 100px;
   }
 
   .banner h4 {
