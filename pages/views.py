@@ -4,7 +4,7 @@ from cars.models import Car
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.contrib import messages
-
+from cardealer.settings import EMAIL_HOST_USER
 # Create your views here.
 
 def home(request):
@@ -53,7 +53,7 @@ def contact(request):
         send_mail(
                 email_subject,
                 message_body,
-                'rathan.kumar049@gmail.com',
+                'bdjibeyrou@gmail.com',
                 [admin_email],
                 fail_silently=False,
             )

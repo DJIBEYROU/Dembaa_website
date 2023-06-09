@@ -94,14 +94,14 @@ WSGI_APPLICATION = 'cardealer.wsgi.application'
 
 DATABASES = {
      'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': 'railway',
-        #'USER': 'postgres',
-        #'PASSWORD': 'ALZygc1O9r6EaxngFVQG',
-        #'HOST': 'containers-us-west-28.railway.app',
-		#'PORT': '7127',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'ALZygc1O9r6EaxngFVQG',
+        'HOST': 'containers-us-west-28.railway.app',
+		'PORT': '7127',
      }
  }
 
@@ -162,16 +162,13 @@ MESSAGE_TAGS = {
 
 SITE_ID = 1
 
-
 # Email sending
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com '
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'glinx2023@gmail.com'
-EMAIL_HOST_PASSWORD = 'hagmloeenmuxlafw'
-
-#DEFAULT_FROM_EMAIL = 'testmail@gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = True
 
 # Whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

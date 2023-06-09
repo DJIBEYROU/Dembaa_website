@@ -777,7 +777,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .main-header .company-logo img {
-  height: 150px;
+  height: 80px;
 }
 
 .main-header .company-logo-2 img {
@@ -804,12 +804,12 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .main-header .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 32.5px 15px;
+  padding: 30.5px 15px;
   line-height: 20px;
   color: #515151;
   opacity: 1;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
@@ -845,7 +845,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .main-header .navbar {
-  padding: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px
+
 }
 
 .main-header .form-inline .submit {
@@ -6146,7 +6150,7 @@ input[type="radio"] {
   padding: 25px 25px 10px;
   max-width: 400px !important;
   width: 100%;
-  top: 25%;
+  top: 28%;
   right: 10%;
   z-index: 1;
   background: #fff;
@@ -8342,7 +8346,7 @@ input[type="tel"] {
   }
 
   .main-header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 35px 10px;
+    padding: 30px 10px;
   }
 
   .service-car {
@@ -9164,7 +9168,7 @@ input[type="tel"] {
   }
 
   .main-header .company-logo img {
-    height: 150px;
+    height: 80px;
   }
 
   .main-header .company-logo-2 img {
