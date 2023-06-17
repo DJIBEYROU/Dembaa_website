@@ -11,8 +11,18 @@
                 <span class="fa fa-bars"></span>
             </button>
             <div class="navbar-collapse collapse w-100" id="navbar">
+              <a
+                {% if '/' == request.path %}
+                class="nav-link active"
+                {% else %}
+                class="nav-link"
+                {% endif %}
+               href="{% url 'home' %}">
+               <b> G-LINX TRADING </b>
+            </a>
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
+
                         <a
                           {% if '/' == request.path %}
                           class="nav-link active"
@@ -31,7 +41,7 @@
                         class="nav-link"
                         {% endif %}
                          href="{% url 'cars' %}">
-                            Cars
+                            All Stock
                         </a>
                     </li>
                     <li class="nav-item">
@@ -42,7 +52,7 @@
                         class="nav-link"
                         {% endif %}
                          href="{% url 'services' %}">
-                            Our Services
+                            How To Buy
                         </a>
                     </li>
                     <li class="nav-item">
@@ -53,7 +63,7 @@
                         class="nav-link"
                         {% endif %}
                          href="{% url 'about' %}">
-                            About
+                            About Us
                         </a>
                     </li>
 

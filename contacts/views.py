@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Contact
 from django.core.mail import send_mail
+from django.contrib import messages
 from django.contrib.auth.models import User
 
 
@@ -38,8 +39,8 @@ def inquiry(request):
                  'New Car Inquiry',
                  'You have a new inquiry for the car ' + car_title + '. Please login to your admin panel for more info.',
                  'glinx2023@gmail.com',
-                 [admin_email],
-                 fail_silently=False,
+                 ['glinx2023@gmail.com'],
+                 fail_silently = False,
              )
 
         contact.save()

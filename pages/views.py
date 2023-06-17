@@ -4,7 +4,7 @@ from cars.models import Car
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.contrib import messages
-from cardealer.settings import EMAIL_HOST_USER
+#from cardealer.settings import EMAIL_HOST_USER
 # Create your views here.
 
 def home(request):
@@ -45,15 +45,15 @@ def contact(request):
         phone = request.POST['phone']
         message = request.POST['message']
 
-        email_subject = 'You have a new message from CarDealer Website regarding ' + subject
+        email_subject = 'You have a new message from G-linxtrading ' + subject
         message_body = 'Name: ' + name + '. Email: ' + email + '. Phone: ' + phone + '. Message: ' + message
-
+    #change get to filter /--> is_superuser
         admin_info = User.objects.get(is_superuser=True)
         admin_email = admin_info.email
         send_mail(
                 email_subject,
                 message_body,
-                'bdjibeyrou@gmail.com',
+                'glinx2023@gmail.com',
                 [admin_email],
                 fail_silently=False,
             )
